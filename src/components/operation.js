@@ -8,9 +8,13 @@ import { operationPressed } from '../actions'
 
 class Operation extends Component {
 
+    clickHandler(){
+        this.props.operationChoosed(this.props.operation);
+        this.props.numberToDisplay();
+    }
     render() {
         return (
-            <button onClick={()=>{this.props.operationChoosed(this.props.operation)}} className="button btnO"
+            <button onClick={this.clickHandler.bind(this)} className="button btnO"
                     value="{this.props.operation}">{this.props.operation}</button>
 
         )

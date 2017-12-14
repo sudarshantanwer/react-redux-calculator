@@ -4,7 +4,7 @@
 
 import { operationClicked, digitClicked, resultClicked } from './helpers'
 
-const initialState = { digit1 : '', digit2 : '', operation : '', result : 0 };
+const initialState = { digit1 : '', digit2 : '', operation : '', result : 0, displayNumber :'digit1' };
 
 export function reducer1(state = initialState, action) {
     var updatedState = {};
@@ -12,22 +12,19 @@ export function reducer1(state = initialState, action) {
     switch (action.type){
 
         case 'OPERATION_PRESSED' :
-            operationClicked(state, action);
-            return {...state, };
+            return operationClicked(state, action);
             break;
 
         case 'DIGIT_PRESSED' :
-            digitClicked(state, action);
-            return {...state, };
+            return digitClicked(state, action);
             break;
 
         case 'DIGIT_PRESSED' :
-            resultClicked(state, action);
-            return {...state, };
+            return resultClicked(state, action);
             break;
 
         default :
-            return {state : state};
+            return Object.assign({}, state);
 
     }
 
