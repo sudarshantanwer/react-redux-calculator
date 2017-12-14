@@ -3,9 +3,15 @@
  */
 
 export function operationClicked(state, action) {
+debugger
+    if(action.operation === '='){
+        state.result = eval(state.digit1 + state.operation + state.digit2);
+        state.displayNumber = 'result';
 
-    state.operation = action.operation;
-console.log(state)
+    } else {
+        state.operation = action.operation;
+    }
+
     return Object.assign({}, state);
 }
 

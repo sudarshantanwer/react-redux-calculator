@@ -10,7 +10,6 @@ class Operation extends Component {
 
     clickHandler(){
         this.props.operationChoosed(this.props.operation);
-        this.props.numberToDisplay();
     }
     render() {
         return (

@@ -22,8 +22,10 @@ class App extends Component {
   render() {
     return (
         <div id="phone">
-
-        <div id="calculator" className="App">
+            <div id="sensor"></div>
+            <div id="selfieCam"></div>
+            <div id="speaker"></div>
+            <div id="calculator" className="App">
         <Display result={this.props.displayNumber} />
           <Digit number="1" />
           <Digit number="2" />

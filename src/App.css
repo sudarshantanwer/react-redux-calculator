@@ -27,6 +27,8 @@
   to { transform: rotate(360deg); }
 }
 
+ /*-----------------custom css start ------------------*/
+
 html {
   height: 100%;
 }
@@ -54,7 +56,7 @@ p {color:white;
 #phone {
   margin:10px auto;
   width:275px;
-  background:black;
+  background:white;
   padding-top:10px;
   padding-bottom:2px;
   border-radius:30px;
@@ -109,7 +111,6 @@ p {color:white;
 #calculator {
   width:266px;
   height:453px;
-  background:#202020;
   margin:1% auto 1% auto;
   border: 1px solid black;
 }
