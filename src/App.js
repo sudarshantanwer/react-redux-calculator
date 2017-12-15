@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header'
 import Display from './components/display'
 import Digit from './components/digit'
 import Operation from './components/operation'
@@ -21,6 +22,8 @@ class App extends Component {
 
   render() {
     return (
+        <div>
+            <Header/>
         <div id="phone">
             <div id="sensor"></div>
             <div id="selfieCam"></div>
@@ -38,14 +41,15 @@ class App extends Component {
           <Digit number="7" />
           <Digit number="8" />
           <Digit number="9" />
-          <Operation operation="÷"/>
+          <Operation operation="/"/>
           <Digit number="0" />
             <Operation operation="AC"/>
             <Operation operation="=" calculate={this.calculate}/>
-            <Operation operation="x"/>
+            <Operation operation="*"/>
 
           <button id="home"></button>
       </div>
+        </div>
         </div>
     );
   }
@@ -62,10 +66,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
 
     return {
-        // numberToDisplay : function (digit) {
-        //     dispatch(digitPressed(digit));
-        //
-        // }
+
     }
 
 }

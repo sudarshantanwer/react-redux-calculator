@@ -3,12 +3,25 @@
  */
 
 export function operationClicked(state, action) {
-debugger
+
     if(action.operation === '='){
         state.result = eval(state.digit1 + state.operation + state.digit2);
         state.displayNumber = 'result';
 
-    } else {
+        if(Math.floor(state.result) != state.result){
+            state.result = state.result.toFixed(2);
+        }
+
+
+    } else if(action.operation === 'AC'){
+        state = { digit1 : '', digit2 : '', operation : '', result : 0, displayNumber :'result' };
+    }
+    else {
+        if(state.digit2){
+            state.digit1 = state.result;
+            state.displayNumber = 'digit1';
+            state.digit2 = '';
+        }
         state.operation = action.operation;
     }
 

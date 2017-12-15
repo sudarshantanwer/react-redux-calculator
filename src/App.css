@@ -113,6 +113,8 @@ p {color:white;
   height:453px;
   margin:1% auto 1% auto;
   border: 1px solid black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 #display {
