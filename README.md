@@ -1,9 +1,10 @@
-This is a simple mathematical calculator for doing airthmatical operations.
-We have used redux for the state management. Beacuse we did not use any async operation so we did not use any middleware as well.
+This is a simple calculator for doing mathematical operations.
+In this project I have used react for the view layer and redux for state management. Beacuse we did not use any async operation so we did not use any middleware as well.
 
+This project can be beneficial to understand the basic concepts of state management in redux.
 
-###Creadit for css
-1. We have used css from [Here](https://codepen.io/CodesAndJazz/pen/dXazYj)
+### `Credits`
+1. I have used css from [Here](https://codepen.io/CodesAndJazz/pen/dXazYj)
 2. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
@@ -28,9 +29,4 @@ See the section about [running tests](#running-tests) for more information.
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
 
